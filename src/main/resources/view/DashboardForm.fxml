@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.DashboardFormController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1020.0">
+         <image>
+            <Image url="@../images/empty-banner-with-many-little-chefs-on-white-background-free-vector.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="365.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DASHBOARD FORM">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Label layoutX="194.0" layoutY="471.0" prefHeight="141.0" prefWidth="158.0" style="-fx-background-color: grey; -fx-background-radius: 20;" />
+      <Label layoutX="663.0" layoutY="476.0" prefHeight="141.0" prefWidth="158.0" style="-fx-background-color: grey; -fx-background-radius: 20;" />
+      <Label layoutX="432.0" layoutY="474.0" prefHeight="141.0" prefWidth="158.0" style="-fx-background-color: grey; -fx-background-radius: 20;" />
+      <Label fx:id="program" layoutX="250.0" layoutY="508.0" prefHeight="67.0" prefWidth="84.0" style="-fx-background-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStudent" layoutX="488.0" layoutY="510.0" prefHeight="67.0" prefWidth="84.0" style="-fx-background-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUser" layoutX="721.0" layoutY="508.0" prefHeight="67.0" prefWidth="84.0" style="-fx-background-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Text layoutX="205.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="course count">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="443.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="student count">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="671.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="user count">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Line endX="272.0" layoutX="424.0" layoutY="364.0" startX="-108.0" stroke="#ffc300" strokeWidth="3.0" />
+   </children>
+</AnchorPane>

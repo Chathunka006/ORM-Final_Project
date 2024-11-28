@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.StudentFormController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1020.0">
+         <image>
+            <Image url="@../images/download.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="anpStudent" layoutX="90.0" layoutY="47.0" opacity="0.88" prefHeight="700.0" prefWidth="820.0" style="-fx-background-color: white;">
+         <children>
+            <Text layoutX="232.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT  FORM">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtId" layoutX="141.0" layoutY="129.0" onAction="#txtIdOnAction" onKeyReleased="#txtStudentIdOnKeyReleased" prefHeight="35.0" prefWidth="181.0" promptText="id" style="-fx-border-radius: 5; -fx-background-radius: 5;" />
+            <TextField fx:id="txtAddress" layoutX="141.0" layoutY="196.0" onAction="#txtAddressOnAction" onKeyReleased="#txtAddressOnKeyReleased" prefHeight="35.0" prefWidth="181.0" promptText="address" style="-fx-border-radius: 5; -fx-background-radius: 5;" />
+            <TextField fx:id="txtDate" layoutX="141.0" layoutY="263.0" onAction="#txtDateOnAction" onKeyReleased="#txtDateOnKeyReleased" prefHeight="35.0" prefWidth="181.0" promptText="date" style="-fx-border-radius: 5; -fx-background-radius: 5;" />
+            <TextField fx:id="txtContact" layoutX="141.0" layoutY="400.0" onAction="#txtContactOnAction" onKeyReleased="#txtContactOnKeyReleased" prefHeight="35.0" prefWidth="181.0" promptText="contact" style="-fx-border-radius: 5; -fx-background-radius: 5;" />
+            <TextField fx:id="txtName" layoutX="141.0" layoutY="332.0" onAction="#txtNameOnAction" onKeyReleased="#txtStudentNameOnKeyReleased" prefHeight="35.0" prefWidth="181.0" promptText="name" style="-fx-border-radius: 5; -fx-background-radius: 5;" />
+            <ComboBox fx:id="comboUser" layoutX="404.0" layoutY="129.0" onAction="#comboUserOnAction" prefHeight="35.0" prefWidth="181.0" promptText="user" style="-fx-border-radius: 5; -fx-background-radius: 5;" />
+            <ComboBox fx:id="comboCourse" layoutX="404.0" layoutY="196.0" onAction="#comboCourseOnAction" prefHeight="35.0" prefWidth="181.0" promptText="course" style="-fx-border-radius: 5; -fx-background-radius: 5;" />
+            <TextField fx:id="txtSearch" layoutX="569.0" layoutY="42.0" prefHeight="35.0" prefWidth="236.0" promptText="search" style="-fx-border-radius: 5; -fx-border-color: blue;" />
+            <TableView fx:id="tblStudent" layoutX="50.0" layoutY="460.0" prefHeight="211.0" prefWidth="721.0">
+               <columns>
+                  <TableColumn fx:id="colId" prefWidth="73.5999755859375" text="ID" />
+                  <TableColumn fx:id="colName" prefWidth="139.0" text="NAME" />
+                  <TableColumn fx:id="colAddress" minWidth="7.20001220703125" prefWidth="161.0" text="ADDRESS" />
+                  <TableColumn fx:id="colContact" prefWidth="171.0" text="CONTACT" />
+                  <TableColumn fx:id="colDate" prefWidth="175.0" text="DATE" />
+               </columns>
+            </TableView>
+            <Button fx:id="btnSave" layoutX="669.0" layoutY="247.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="35.0" prefWidth="102.0" style="-fx-border-color: black; -fx-border-radius: 3; -fx-background-color: #2D7DBC;" text="SAVE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUpdate" layoutX="669.0" layoutY="305.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="102.0" style="-fx-border-color: black; -fx-border-radius: 3; -fx-background-color: #67A03F;" text="UPDATE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDelete" layoutX="669.0" layoutY="363.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="102.0" style="-fx-border-color: black; -fx-border-radius: 3; -fx-background-color: #F3371A;" text="DELETE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnClear" layoutX="669.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="35.0" prefWidth="102.0" style="-fx-border-color: black; -fx-border-radius: 3; -fx-background-color: #F2AF3A;" text="CLEAR">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtcourseName" layoutX="404.0" layoutY="265.0" prefHeight="35.0" prefWidth="181.0" promptText="courseName" style="-fx-border-radius: 5; -fx-background-radius: 5;" />
+            <TextField fx:id="txtDuration" layoutX="404.0" layoutY="332.0" prefHeight="35.0" prefWidth="181.0" promptText="Duration" style="-fx-border-radius: 5; -fx-background-radius: 5;" />
+            <TextField fx:id="txtFree" layoutX="404.0" layoutY="400.0" prefHeight="35.0" prefWidth="181.0" promptText="fee" style="-fx-border-radius: 5; -fx-background-radius: 5;" />
+            <Text layoutX="148.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT ID">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="148.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADDRESS">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="148.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="148.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT NAME">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="148.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTACT">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="412.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COURSE NAME">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="412.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DURATION">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="412.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FEE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="27.0" fitWidth="29.0" layoutX="770.0" layoutY="46.0">
+               <image>
+                  <Image url="@../images/icons8-search-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Line endX="231.0" layoutX="383.0" layoutY="132.0" startX="-108.0" stroke="#ffc300" strokeWidth="3.0" />
+   </children>
+</AnchorPane>

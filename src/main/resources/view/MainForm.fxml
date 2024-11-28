@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.MainFormController">
+   <children>
+      <AnchorPane layoutX="-6.0" layoutY="-4.0" prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: E7D0A6;">
+         <children>
+            <AnchorPane fx:id="anpMain" layoutX="289.0" prefHeight="800.0" prefWidth="1020.0" style="-fx-background-color: white;" stylesheets="@../../../../../Asha-ORM-Final-Project/src/main/resources/css/DashFile.css" />
+            <Button fx:id="btnDashboard" layoutX="6.0" layoutY="241.0" mnemonicParsing="false" onAction="#btnDashboardOnAction" prefHeight="54.0" prefWidth="283.0" style="-fx-background-color: white;" styleClass="textFieldRedius" stylesheets="@../css/DashFie.css" text="DASHBOARD">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUser" layoutX="6.0" layoutY="318.0" mnemonicParsing="false" onAction="#btnUserOnAction" prefHeight="54.0" prefWidth="283.0" style="-fx-background-color: white;" stylesheets="@../../../../../Asha-ORM-Final-Project/src/main/resources/css/DashFile.css" text="USER">
+               <styleClass>
+                  <String fx:value="logout1" />
+                  <String fx:value="textFieldRedius" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnStudent" layoutX="6.0" layoutY="397.0" mnemonicParsing="false" onAction="#btnStudentOnAction" prefHeight="54.0" prefWidth="283.0" style="-fx-background-color: white;" stylesheets="@../../../../../Asha-ORM-Final-Project/src/main/resources/css/DashFile.css" text="STUDENT">
+               <styleClass>
+                  <String fx:value="logout1" />
+                  <String fx:value="textFieldRedius" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnProgram" layoutX="6.0" layoutY="476.0" mnemonicParsing="false" onAction="#btnProgramOnAction" prefHeight="54.0" prefWidth="283.0" style="-fx-background-color: white;" stylesheets="@../../../../../Asha-ORM-Final-Project/src/main/resources/css/DashFile.css" text="PROGRAM">
+               <styleClass>
+                  <String fx:value="logout1" />
+                  <String fx:value="textFieldRedius" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPayment" layoutX="6.0" layoutY="556.0" mnemonicParsing="false" onAction="#btnPaymentOnAction" prefHeight="54.0" prefWidth="283.0" style="-fx-background-color: white;" stylesheets="@../../../../../Asha-ORM-Final-Project/src/main/resources/css/DashFile.css" text="PAYMENT">
+               <styleClass>
+                  <String fx:value="logout1" />
+                  <String fx:value="textFieldRedius" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblCurrentUser" layoutX="72.0" layoutY="756.0" prefHeight="43.0" prefWidth="170.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label fx:id="lblDate" layoutX="35.0" layoutY="704.0" prefHeight="36.0" prefWidth="249.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <ImageView layoutX="17.0" layoutY="320.0">
+               <image>
+                  <Image url="@../images/icons8-user-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="478.0">
+               <image>
+                  <Image url="@../images/icons8-courses-64.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="17.0" layoutY="558.0">
+               <image>
+                  <Image url="@../images/icons8-payment-50.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="17.0" layoutY="399.0">
+               <image>
+                  <Image url="@../images/icons8-student-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="17.0" layoutY="243.0">
+               <image>
+                  <Image url="@../images/icons8-dashboard-80.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="22.0" layoutY="752.0">
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="23.0" layoutY="755.0">
+               <image>
+                  <Image url="@../images/icons8-user-clock-50(1).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnSettings" layoutX="6.0" layoutY="635.0" mnemonicParsing="false" onAction="#btnSettingsOnAction" prefHeight="54.0" prefWidth="283.0" style="-fx-background-color: white;" stylesheets="@../../../../../Asha-ORM-Final-Project/src/main/resources/css/DashFile.css" text="SETTINGS" textAlignment="CENTER">
+               <styleClass>
+                  <String fx:value="logout1" />
+                  <String fx:value="textFieldRedius" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <ImageView layoutX="17.0" layoutY="638.0">
+               <image>
+                  <Image url="@../images/icons8-settings-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="46.0" layoutY="18.0">
+               <image>
+                  <Image url="@../images/image.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

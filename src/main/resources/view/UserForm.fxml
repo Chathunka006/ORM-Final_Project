@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.UserFormController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1020.0">
+         <image>
+            <Image url="@../images/download.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="anpUser" layoutX="90.0" layoutY="47.0" opacity="0.88" prefHeight="700.0" prefWidth="820.0" style="-fx-background-color: white;">
+         <children>
+            <Text layoutX="280.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER  FORM" wrappingWidth="242.599609375">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtRole" layoutX="393.0" layoutY="237.0" onAction="#txtRoleOnAction" onKeyReleased="#txtRoleOnKeyReleased" prefHeight="35.0" prefWidth="181.0" promptText="role" style="-fx-background-radius: 5;" />
+            <TextField fx:id="txtContact" layoutX="388.0" layoutY="310.0" onAction="#txtContactOnAction" onKeyReleased="#txtContactOnKeyReleased" prefHeight="35.0" prefWidth="181.0" promptText="contact" style="-fx-background-radius: 5;" />
+            <TextField fx:id="txtPassword" layoutX="393.0" layoutY="163.0" onAction="#txtPasswordOnAction" onKeyReleased="#txtPasswordOnKeyReleased" prefHeight="35.0" prefWidth="181.0" promptText="password" style="-fx-background-radius: 5;" />
+            <TextField fx:id="txtEmail" layoutX="149.0" layoutY="309.0" onAction="#txtEmailOnAction" onKeyReleased="#txtEmailOnKeyReleased" prefHeight="35.0" prefWidth="181.0" promptText="email" style="-fx-background-radius: 5;" />
+            <TextField fx:id="txtUsername" layoutX="149.0" layoutY="237.0" onAction="#txtUsernameOnAction" onKeyReleased="#txtUserNameOnKeyReleased" prefHeight="35.0" prefWidth="181.0" promptText="username" style="-fx-background-radius: 5;" />
+            <Button fx:id="btnSave" layoutX="669.0" layoutY="260.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="35.0" prefWidth="102.0" style="-fx-background-color: #2D7DBC; -fx-border-color: black; -fx-border-radius: 3;" text="SAVE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="btnUpdate" layoutX="669.0" layoutY="314.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="102.0" style="-fx-background-color: #67A03F; -fx-border-color: black; -fx-border-radius: 3;" text="UPDATE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="btnDelete" layoutX="669.0" layoutY="373.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="102.0" style="-fx-background-color: #F3371A; -fx-border-color: black; -fx-border-radius: 3;" text="DELETE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <TableView fx:id="tblUser" layoutX="42.0" layoutY="452.0" prefHeight="200.0" prefWidth="736.0">
+               <columns>
+                  <TableColumn fx:id="colId" prefWidth="97.0" text="ID" />
+                  <TableColumn fx:id="colUsername" prefWidth="164.0" text="USERNAME" />
+                  <TableColumn fx:id="colRole" prefWidth="138.0" text="ROLE" />
+                  <TableColumn fx:id="colEmail" minWidth="0.0" prefWidth="175.0" text="EMAIL" />
+                  <TableColumn fx:id="colContact" prefWidth="161.0" text="CONTACT" />
+               </columns>
+            </TableView>
+            <TextField fx:id="txtUserId" layoutX="149.0" layoutY="163.0" onAction="#txtUserIdOnAction" onKeyReleased="#txtUserIdOnKeyReleased" prefHeight="35.0" prefWidth="181.0" promptText="userId" style="-fx-background-radius: 5;" />
+            <Button fx:id="btnClear" layoutX="669.0" layoutY="206.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="35.0" prefWidth="102.0" style="-fx-background-color: #F2AF3A; -fx-border-color: black; -fx-border-radius: 3;" text="CLEAR">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <TextField fx:id="txtSearch" layoutX="569.0" layoutY="42.0" prefHeight="35.0" prefWidth="236.0" promptText="search" style="-fx-background-radius: 5; -fx-border-color: blue; -fx-border-radius: 5;">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <Line endX="160.0" layoutX="347.0" layoutY="88.0" startX="-108.0" stroke="#ffc300" strokeWidth="3.0" />
+            <Text layoutX="153.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER ID">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="153.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER NAME">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="153.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMAIL">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="392.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTACT">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="397.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="397.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ROLE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="769.0" layoutY="47.0">
+               <image>
+                  <Image url="@../images/icons8-search-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
