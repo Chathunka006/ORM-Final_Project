@@ -62,31 +62,6 @@
                <font>
                   <Font name="System Bold" size="15.0" />
                </font></Label>
-            <ImageView layoutX="17.0" layoutY="320.0">
-               <image>
-                  <Image url="@../images/icons8-user-50.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="478.0">
-               <image>
-                  <Image url="@../images/icons8-courses-64.png" />
-               </image>
-            </ImageView>
-            <ImageView layoutX="17.0" layoutY="558.0">
-               <image>
-                  <Image url="@../images/icons8-payment-50.png" />
-               </image>
-            </ImageView>
-            <ImageView layoutX="17.0" layoutY="399.0">
-               <image>
-                  <Image url="@../images/icons8-student-50.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="17.0" layoutY="243.0">
-               <image>
-                  <Image url="@../images/icons8-dashboard-80.png" />
-               </image>
-            </ImageView>
             <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="22.0" layoutY="752.0">
             </ImageView>
             <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="23.0" layoutY="755.0">
@@ -103,14 +78,39 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Button>
-            <ImageView layoutX="17.0" layoutY="638.0">
-               <image>
-                  <Image url="@../images/icons8-settings-50.png" />
-               </image>
-            </ImageView>
             <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="46.0" layoutY="18.0">
                <image>
                   <Image url="@../images/image.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="17.0" layoutY="248.0">
+               <image>
+                  <Image url="@../images/dashboard%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="25.0" layoutY="327.0">
+               <image>
+                  <Image url="@../images/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="21.0" layoutY="403.0">
+               <image>
+                  <Image url="@../images/graduation.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="24.0" layoutY="485.0">
+               <image>
+                  <Image url="@../images/coding.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="25.0" layoutY="565.0">
+               <image>
+                  <Image url="@../images/payment-method.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="23.0" layoutY="644.0">
+               <image>
+                  <Image url="@../images/setting.png" />
                </image>
             </ImageView>
          </children>
